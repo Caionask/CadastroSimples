@@ -1,36 +1,27 @@
 ﻿using System;
-using System.Text.RegularExpressions;
+using System.Text.RegularExpressions; 
+using System.Collections.Generic; // Para uso de listas. 
 
 class Program
 {
     static void Main()
     {
-        string name, mail = "";
+        string mail = "";
         int age, option = 0;
-        string[] users;
-        int userkey = 0;
 
-        Console.WriteLine("• WELCOME TO THE MAILHUB •");
-        Console.WriteLine("Set '1' to Log in or '2' to subscribe");
-        option = Convert.ToInt32(Console.ReadLine());
+        WelcomeTerminal();
 
         switch (option)
         {
             case 1:
                 while (true)
                 {
-                    Console.WriteLine("Your Mail: ");
+                    Console.WriteLine("Your Hero Mail: ");
                     mail = Console.ReadLine() ?? ""; // Nota 1.
 
-                    if (string.IsNullOrWhiteSpace(mail)) // Nota 2.
+                    if (string.IsNullOrWhiteSpace(mail) && !mail.Contains("@gmail.com")) // Nota 2.
                     {
-                        Console.WriteLine("The mail adress cannot be empyt. Please, set a valid mail.");
-                        continue;
-                    }
-
-                    if (!mail.Contains("@")) // Nota 3.
-                    {
-                        Console.WriteLine("Invalid mail, Try again.");
+                        Console.WriteLine("Please, set a valid mail.");
                         continue;
                     }
 
@@ -38,6 +29,7 @@ class Program
                 break;
 
             case 2:
+
             break;
 
             
@@ -48,7 +40,9 @@ class Program
 
     public static void WelcomeTerminal()
     {
-        
+        Console.WriteLine("• WELCOME TO THE HERO MAILHUB •");
+        Console.WriteLine("Set '1' to subscribe or '2' to Log in");
+        int option = Convert.ToInt32(Console.ReadLine());
     }
 }
 
@@ -60,3 +54,11 @@ o ReadLine permite o retorno de um valor nulo pelo usuário, algo que geraria um
 
 Ao acrescentar: (?? "") na frente do ReadLine eu garando que, se o retorno for nulo, a 
 variável armazena uma string vazia.*/
+
+// Nota 2: "string.IsNullorWhiteSpace" - O que representa?
+/* esse é um metodo usado para validação de variáveis do tipo string, ela verifica se
+se o valor é nulo, vazio ou se há apenas espaços preenchidos e retorna verdade ou falso, 
+dependendo do caso.*/
+
+// Nota 3: 
+

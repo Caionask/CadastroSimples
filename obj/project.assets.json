@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\intel\\Desktop\\Code\\Cadastro Simples\\Cadastro Simples.csproj",
+      "projectUniqueName": "C:\\Users\\intel\\Desktop\\Code\\BackEnd\\CSharp\\Pessoal\\Cadastro Simples\\Cadastro Simples.csproj",
       "projectName": "Cadastro Simples",
-      "projectPath": "C:\\Users\\intel\\Desktop\\Code\\Cadastro Simples\\Cadastro Simples.csproj",
+      "projectPath": "C:\\Users\\intel\\Desktop\\Code\\BackEnd\\CSharp\\Pessoal\\Cadastro Simples\\Cadastro Simples.csproj",
       "packagesPath": "C:\\Users\\intel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\intel\\Desktop\\Code\\Cadastro Simples\\obj\\",
+      "outputPath": "C:\\Users\\intel\\Desktop\\Code\\BackEnd\\CSharp\\Pessoal\\Cadastro Simples\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\intel\\AppData\\Roaming\\NuGet\\NuGet.Config"
